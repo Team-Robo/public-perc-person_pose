@@ -1,0 +1,15 @@
+# colcon (if anyone builds from inside the package dir)
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store

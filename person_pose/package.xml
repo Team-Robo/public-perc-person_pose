@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>person_pose</name>
+  <version>0.0.1</version>
+  <description>RTMDet + RTMPose pose estimation ROS2 node (C++) via the MMDeploy SDK</description>
+  <maintainer email="teamrobontu@gmail.com">Nanyang Technological University Team Robo</maintainer>
+  <author>Khiem Nguyen</author>
+  <author>Hu Ming Jie</author>
+  <author>Tan Jin Hern</author>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>builtin_interfaces</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>person_pose_interfaces</depend>
+  <depend>libopencv-dev</depend>
+
+  <!-- MMDeploy C++ SDK is resolved via CMake (find_package(MMDeploy)); it is
+       installed out-of-tree, so it has no rosdep key here. See README.md. -->
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
